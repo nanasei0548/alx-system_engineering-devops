@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# This script is displaying "To infinity and beyond" indefinitely.
-# Cannot be terminated.
-
-trap "echo I am invincible!!!" SIGTERM
-while true; do
-	echo "To infinity and beyond"
+# An invisible infinity looooooooop 
+trap 'echo "I am invincible!!!"' SIGTERM
+i=0
+while [ $i ]; do
+	echo 'To infinity and beyond'
 	sleep 2
 done
